@@ -1,0 +1,208 @@
+.get {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+
+    &__flex {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+    }
+
+
+
+    &__heading {
+        font-family: 'Roboto';
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 72px;
+        text-align: center;
+        color: #12100C;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 48px;
+    }
+
+    &__first {
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 56px;
+        border-radius: 20px;
+    }
+
+    &__head {
+        font-family: 'Roboto';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 8px;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        color: #12100CB2;
+        margin: 0;
+        padding: 0;
+        max-width: 471px;
+
+        &:nth-child(2) {
+            padding-bottom: 62px;
+        }
+    }
+
+    &__lanch {
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 12px;
+        padding: 9px 33px;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+
+        &:nth-child(3) {
+            background-color: #FC6D26;
+            margin-bottom: 16px;
+        }
+
+        &:nth-child(4) {
+            background-color: #000000;
+            margin-bottom: 16px;
+        }
+
+        &:nth-child(5) {
+            background-color: #2684FF;
+            margin-bottom: 16px;
+            margin-bottom: 64px;
+        }
+    }
+
+    &__pod {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        background-color: #FFE4BC;
+        padding: 1px 16px;
+        border-radius: 12px;
+        color: #12100CB2;
+        margin-bottom: 90px;
+    }
+
+    &__list {
+        max-width: 530px;
+        width: 100%;
+        display: grid;
+        gap: 10px;
+    }
+
+    &__item {
+        background-color: #F9F9F9;
+        padding: 14px 16px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__t {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: #12100CB2;
+    }
+
+    &__b {
+        background-color: #12100C;
+        box-shadow: 0px 1px 1px 0px #0000001A;
+        color: #ffffff;
+        padding: 7px 12px;
+        border-radius: 12px;
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 1235px) {
+    .get {
+        &__b {
+            margin-left: 20px;
+        }
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .get {
+        &__flex {
+            display: grid;
+        }
+
+        &__b {
+            margin-left: 90px;
+        }
+    }
+}
+@media only screen and (max-width: 430px) {
+    .get {
+
+        &__b {
+            margin-left: 20px;
+        }
+
+        &__item  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            max-width: 310px;
+            padding: 0;
+        }
+
+        &__list {
+            padding: 0;
+        }
+
+        &__heading {
+            font-size: 45px;
+        }
+
+        &__head {
+            font-size: 28px;
+            line-height: 20px;
+        }
+
+        &__text {
+            font-size: 19px;
+        }
+        &__first {
+            // padding: 20px;
+            padding-right: 0;
+            padding-left: 0;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.hero {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 178px;
+    }
+
+    &__info {
+        max-width: 560px;
+    }
+
+    &__heading {
+        font-family: 'Roboto';
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 88px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 39px;
+        color: #12100C;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        color: #12100CB2;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 48px;
+    }
+
+    &__fon {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        padding: 11px 46px;
+        background-color: #FFAE33;
+        box-shadow: 0px 1px 1px 0px #0000001A;
+        border-radius: 16px;
+        margin-right: 24px;
+    }
+
+    &__tex {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #12100CB2;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 28px;
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    .hero__heading {
+        font-size: 50px;
+    }
+
+    .hero__text {
+        font-size: 18px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 770px) {
+    .hero{
+        .container {
+            padding: 0;
+        }
+
+        &__pic {
+            width: 350px;
+            // display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .hero__heading {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        .container {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        &__pic {
+            width: 300px;
+            // display: none;
+        }
+    }
+
+    .hero__text {
+        font-size: 14px;
+    }
+
+    .hero__tex {
+        font-size: 12px;
+    }
+
+    .hero__btn {
+        font-size: 12px;
+    }
+
+    .hero__icons {
+        gap: 10px;
+    }
+
+    br {
+        display: none;
+    }
+}
